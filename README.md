@@ -206,35 +206,7 @@ git commit -m"step 5"
 
 Avant d'aller plus loin, il va falloir doter notre **"Board"** d'une méthode lui permettant de recevoir les frappes de l'adversaire, et qui permettra à l'adversaire de recevoir les nôtres :
 
-```java
-enum Hit {
-		MISS(-1, "manqué"),
-		STRIKE(-2, "touché"),
-		DESTROYER(2, "Frégate"),
-		SUBMARINE(3, "Sous-marin"),
-		BATTLESHIP(4, "Croiseur"),
-		CARRIER(5, "Porte-avion")
-		;
-		private int value;
-		private String label;
-		Hit(int value, String label) {
-			this.value = value;
-			this.label = label;
-		}
-
-		public static Hit fromInt(int value) {
-			for (Hit hit : Hit.values()) {
-				if (hit.value == value) {
-					return hit;
-				}
-			}
-			throw new NoSuchElementException("no enum for value " + value);
-		}
-
-		public String getLabel() {
-			return this.label;
-		}
-	};
+```
 /**
  * Sends a hit at the given position
  * @param x
