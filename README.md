@@ -185,7 +185,7 @@ Travail demandé :
  - Dans **"Board"**, changer le tableau de **boolean "hits"** en un tableau de **Boolean**
  - Dans **"Board"**, changer le tableau de **Character "ships"** en un tableau de **"ShipState"**
  - Dans **"Board"**, changer la méthode **print()** pour afficher '.' si un Hit est null, 'X' en blanc si un hit est faux, et 'X' en rouge si un hit est vrai.
- - Modifier la classe "**TestBoard**" pour instancier un board, placer plusieurs navires, et appeler "**sendHit()**" sur ce board. Vérifier que les navires et les hits changent de couleurs en cas de touche.
+
 
 >  NB : Vous pouvez utiliser la classe **ColorUtil** qui vous est fournie
 ```java
@@ -223,7 +223,7 @@ L'enum **"Hit"** permet de renvoyer le status d'une frappe lancée. Les valeurs 
 Travail demandé :
  - Copier coller le code ci dessus dans **IBoard**, puis l'implémenter dans **Board**.
  - Implémenter la méthode **"sendHit()"** en prenant soin de retourner la bonne valeur si un navire est détruit.
- - Modifier la classe **"TestBoard"** pour envoyer des frappes sur l'unique destroyer de votre board. Vérifier que le destroyer s'affiche en rouge.
+ - Modifier la classe "**TestBoard**" pour instancier un board, placer plusieurs navires, et appeler "**sendHit()**" sur ce board. Vérifier que les navires et les hits changent de couleurs en cas de touche.
  - Vérifier que **destroyer.isSunk()** retourne "vrai", et que le dernier appel à **"sendHit()"** retourne **Hit.DESTROYER**. Afficher "coulé" le cas échéant.
 
 Question :
